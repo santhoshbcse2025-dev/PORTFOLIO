@@ -27,7 +27,7 @@ export default function About() {
           <div className={styles.photoWrap}>
             <div className={styles.photoPlaceholder}>
               <video autoPlay loop muted playsInline className={styles.photoVideo}>
-                <source src="/hero-video.mp4" type="video/mp4" />
+                <source src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/hero-video.mp4`} type="video/mp4" />
               </video>
             </div>
             <div className={styles.photoGlow} />

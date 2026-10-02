@@ -43,7 +43,7 @@ export default function Navbar() {
           </li>
         ))}
         <li>
-          <a href="/resume.pdf" download className={styles.resumeBtn}>
+          <a href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/resume.pdf`} download className={styles.resumeBtn}>
             Resume
           </a>
         </li>

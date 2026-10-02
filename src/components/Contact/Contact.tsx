@@ -210,7 +210,7 @@ export default function Contact() {
         <p className={styles.footerText}>
           Designed &amp; built by <strong>Santhosh B</strong> · CSE · Chennai Institute of Technology
         </p>
-        <a href="/resume.pdf" download="Santhosh_B_Resume.pdf" className={styles.downloadBtn}>
+        <a href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/resume.pdf`} download="Santhosh_B_Resume.pdf" className={styles.downloadBtn}>
           Download Resume ↓
         </a>
       </div>

@@ -110,7 +110,7 @@ export default function VideoIntro() {
       {/* ── Blurred ambient bg ── */}
       <div ref={bgLayerRef} className={styles.bgLayer}>
         <video ref={bgVideoRef} autoPlay loop muted playsInline className={styles.bgVideo}>
-          <source src="/hero-video.mp4" type="video/mp4" />
+          <source src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/hero-video.mp4`} type="video/mp4" />
         </video>
         <div className={styles.bgScrim} />
       </div>
@@ -118,7 +118,7 @@ export default function VideoIntro() {
       {/* ── Photo after video ends ── */}
       <div ref={photoRef} className={styles.photoLayer} style={{ opacity: 0 }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/santhosh-photo.png" alt="Santhosh B" className={styles.photoImg} />
+        <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/santhosh-photo.png`} alt="Santhosh B" className={styles.photoImg} />
         <div className={styles.photoOverlay} />
       </div>
 
@@ -133,7 +133,7 @@ export default function VideoIntro() {
           className={styles.fgVideo}
           onEnded={handleVideoEnd}
         >
-          <source src="/hero-video.mp4" type="video/mp4" />
+          <source src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/hero-video.mp4`} type="video/mp4" />
         </video>
         <div className={styles.videoVignette} />
       </div>
