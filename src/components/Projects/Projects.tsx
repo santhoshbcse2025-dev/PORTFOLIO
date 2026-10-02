@@ -46,23 +46,14 @@ const projects = [
   },
   {
     number: '05',
-    title: 'Hospital Queue Management',
-    description: 'A smart queue management system for hospitals that reduces patient waiting time by intelligently assigning tokens, tracking doctor availability, and sending real-time status updates to patients.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Python'],
-    role: 'Full Stack Developer',
-    github: 'https://github.com/santhoshbcse2025-dev',
+    title: 'Arizo — AI Road Safety App',
+    description: 'An offline-first, AI-powered road safety platform built with Flutter — unifying drowsiness detection, Bluetooth mesh emergency messaging, crash SOS, a multilingual traffic chatbot, and voice-based pothole reporting in one app, backed by a Python agent-swarm system.',
+    tech: ['Flutter', 'Dart', 'Python', 'ML Kit', 'Bluetooth Mesh'],
+    role: 'Flutter Developer & AI Systems Integrator',
+    github: 'https://github.com/santhoshbcse2025-dev/road_safety_app',
     demo: '#',
-    tag: 'Web App',
-  },
-  {
-    number: '06',
-    title: 'Cybersecurity Malicious Link Detection',
-    description: 'A machine learning model that detects and classifies malicious URLs in real time. Helps protect users from phishing, malware, and scam links by analyzing URL patterns and features with high accuracy.',
-    tech: ['Python', 'Scikit-learn', 'Flask', 'ML'],
-    role: 'ML Developer',
-    github: 'https://github.com/santhoshbcse2025-dev',
-    demo: '#',
-    tag: 'Cybersecurity',
+    demoLabel: 'Download APK',
+    tag: 'Mobile App',
   },
 ]
 
@@ -112,12 +103,14 @@ export default function Projects() {
                   </svg>
                   GitHub
                 </a>
-                <a href={p.demo} target="_blank" rel="noreferrer" className={`${styles.linkBtn} ${styles.linkBtnAlt}`}>
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-                  </svg>
-                  Live Demo
-                </a>
+                {p.demo && p.demo !== '#' && (
+                  <a href={p.demo} target="_blank" rel="noreferrer" className={`${styles.linkBtn} ${styles.linkBtnAlt}`}>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    {p.demoLabel || 'Live Demo'}
+                  </a>
+                )}
               </div>
             </article>
           ))}

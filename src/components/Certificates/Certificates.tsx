@@ -3,19 +3,21 @@ import { useEffect, useRef } from 'react'
 import styles from './Certificates.module.css'
 
 const certificates = [
-  { title: 'Full Stack Development', issuer: 'Teckkey (Internship Certificate)', year: '2026', category: 'Full Stack', link: '#' },
-  { title: 'DSA with C++ Programming', issuer: 'InternPE', year: '2026', category: 'DSA / C++', link: '#' },
-  { title: 'Machine Learning', issuer: 'Persevex LLP', year: '2026', category: 'ML / AI', link: '#' },
+  { title: 'DSA with C++ Programming', issuer: 'InternPe · Certificate ID IPI#75291', year: '2026', category: 'DSA / C++', link: '#' },
+  { title: 'Full Stack Development', issuer: 'Certified Internship Course', year: '2026', category: 'Full Stack', link: '#' },
+  { title: 'Machine Learning', issuer: 'Presevex', year: '2026', category: 'ML / AI', link: '#' },
   { title: 'Solving 50 Problems in C++', issuer: 'Skill Certificates', year: '2025', category: 'Problem Solving', link: '#' },
   { title: 'Python Programming', issuer: 'Online Platform', year: '2025', category: 'Programming', link: '#' },
   { title: 'Web Development Basics', issuer: 'Online Platform', year: '2024', category: 'Web Dev', link: '#' },
 ]
 
 const achievements = [
-  { icon: '🏆', title: 'LeetCode — 250+ Problems Solved', desc: '50-day streak badge earned' },
-  { icon: '⭐', title: 'C++ Problem Solving Certificate', desc: '50 very easy problems solved on Skill platform' },
-  { icon: '💼', title: '3 Internships Completed', desc: 'Full Stack · DSA · Machine Learning' },
-  { icon: '🎓', title: 'Chennai Institute of Technology', desc: 'B.E. CSE · 2023–2027' },
+  { icon: '🏆', title: '2nd Place — Hackarena 2.0 Zonals', desc: 'Team Blue Horizon, Ignite Room · qualified for National Finals, Delhi' },
+  { icon: '🚀', title: 'Funded — CIT-CITIL Innovest 3.0', desc: 'National-level hackathon, with Team OrbitX' },
+  { icon: '🧭', title: '5 More National Hackathons', desc: 'Participated across additional national-level events' },
+  { icon: '⭐', title: '400+ LeetCode · 250+ in C++', desc: '100-day coding streak badge · 237 problems on SkillRack' },
+  { icon: '💼', title: '3 Internships Completed', desc: 'DSA (C++) · Full Stack · Machine Learning' },
+  { icon: '🎓', title: 'Chennai Institute of Technology', desc: 'B.E. CSE · 2025 – 2029' },
 ]
 
 export default function Certificates() {

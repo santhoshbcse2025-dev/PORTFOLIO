@@ -9,22 +9,46 @@ const skillGroups = [
     skills: [
       { name: 'C', level: 82 },
       { name: 'C++', level: 85 },
-      { name: 'Python', level: 80 },
+      { name: 'Python', level: 85 },
+      { name: 'Kotlin', level: 65 },
     ],
   },
   {
-    category: 'Web Technologies',
+    category: 'Web Development',
     icon: '</>',
     skills: [
-      { name: 'HTML', level: 88 },
-      { name: 'CSS', level: 85 },
+      { name: 'HTML & CSS', level: 88 },
+      { name: 'JavaScript', level: 82 },
+      { name: 'React', level: 75 },
+      { name: 'Node.js & FastAPI', level: 70 },
+    ],
+  },
+  {
+    category: 'AI / Machine Learning',
+    icon: '◈',
+    skills: [
+      { name: 'TensorFlow & PyTorch', level: 80 },
+      { name: 'Scikit-learn', level: 82 },
+      { name: 'CNN / YOLOv8', level: 75 },
+      { name: 'spaCy (NLP / NER)', level: 78 },
+    ],
+  },
+  {
+    category: 'Mobile Development',
+    icon: '▢',
+    skills: [
+      { name: 'Flutter / Dart', level: 65 },
+      { name: 'Android SDK', level: 60 },
+      { name: 'CameraX & ML Kit', level: 58 },
     ],
   },
   {
     category: 'Tools & Platforms',
     icon: '⚙',
     skills: [
-      { name: 'Git & GitHub', level: 85 },
+      { name: 'Git & GitHub', level: 88 },
+      { name: 'Docker', level: 72 },
+      { name: 'Firebase & Supabase', level: 68 },
       { name: 'VS Code', level: 95 },
     ],
   },
@@ -32,13 +56,15 @@ const skillGroups = [
     category: 'Problem Solving',
     icon: '★',
     skills: [
-      { name: 'LeetCode (250+ problems)', level: 80 },
-      { name: 'DSA (C++)', level: 82 },
+      { name: 'LeetCode (400+ problems)', level: 85 },
+      { name: 'C++ (250+ problems)', level: 82 },
       { name: 'Communication', level: 88 },
       { name: 'Teamwork', level: 90 },
     ],
   },
 ]
+
+const exploring = ['ResNet', 'Prophet & statsmodels', 'MediaPipe', 'Google Gemini AI', 'Twilio', 'Leaflet.js']
 
 export default function Skills() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -92,6 +118,12 @@ export default function Skills() {
               </div>
             </div>
           ))}
+        </div>
+        <div className={`${styles.exploringRow} ${styles.animate}`}>
+          <span className={styles.exploringLabel}>Currently exploring</span>
+          <div className={styles.exploringTags}>
+            {exploring.map(s => <span key={s} className={styles.exploringTag}>{s}</span>)}
+          </div>
         </div>
       </div>
     </section>

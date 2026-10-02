@@ -72,6 +72,14 @@
   background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
   border-radius: 8px; padding: 0.3rem 0.8rem; letter-spacing: 0.04em;
 }
+.note {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: rgba(232,220,208,0.45);
+  margin-top: 0.9rem;
+  line-height: 1.6;
+}
 @media (max-width: 700px) {
   .card { grid-template-columns: 1fr; }
   .cardLeft { display: none; }

@@ -64,9 +64,10 @@ export default function About() {
           </p>
           <p className={`${styles.bio} ${styles.animate}`}>
             I treat every project like a problem worth solving properly — I&apos;ve worked through{' '}
-            <strong>250+ problems on LeetCode</strong> and hold a 50-day streak badge, and that same
-            habit of reading the requirement closely and building it to spec carries into client work.
-            I reply fast, keep you posted while I build, and don&apos;t go quiet after you&apos;ve paid.
+            <strong>400+ problems on LeetCode</strong> and <strong>250+ in C++</strong>, holding a
+            100-day streak badge, and that same habit of reading the requirement closely and building
+            it to spec carries into client work. I reply fast, keep you posted while I build, and
+            don&apos;t go quiet after you&apos;ve paid.
           </p>
           <div className={styles.objectiveBox}>
             <span className={styles.objectiveLabel}>How I Work</span>
@@ -77,8 +78,13 @@ export default function About() {
           </div>
           <div className={`${styles.statsRow} ${styles.animate}`}>
             <div className={styles.stat}>
-              <span className={styles.statNum}>250+</span>
+              <span className={styles.statNum}>400+</span>
               <span className={styles.statLabel}>LeetCode Problems</span>
+            </div>
+            <div className={styles.statDivider} />
+            <div className={styles.stat}>
+              <span className={styles.statNum}>250+</span>
+              <span className={styles.statLabel}>C++ Problems</span>
             </div>
             <div className={styles.statDivider} />
             <div className={styles.stat}>
@@ -87,7 +93,7 @@ export default function About() {
             </div>
             <div className={styles.statDivider} />
             <div className={styles.stat}>
-              <span className={styles.statNum}>6</span>
+              <span className={styles.statNum}>5</span>
               <span className={styles.statLabel}>Projects</span>
             </div>
           </div>

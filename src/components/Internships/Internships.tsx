@@ -4,27 +4,30 @@ import styles from './Internships.module.css'
 
 const internships = [
   {
-    role: 'Full Stack Development Intern',
-    company: 'Teckkey',
-    duration: 'Dec 5, 2025 – Jan 19, 2026',
-    type: 'Completed & Certified',
-    skills: ['Frontend Development', 'Backend Development', 'Web Applications', 'Database Management'],
-    color: 'green',
-  },
-  {
     role: 'DSA (C++) Programming Intern',
-    company: 'InternPE',
-    duration: 'May 4, 2026 – May 31, 2026 · 4 Weeks',
-    type: 'Completed',
+    company: 'InternPe',
+    duration: '04 May 2026 – 31 May 2026',
+    type: 'Certificate ID: IPI#75291',
     skills: ['Data Structures & Algorithms', 'C++ Programming', 'Problem Solving'],
+    note: 'Recognized as a sincere, dedicated intern with a professional attitude and excellent job knowledge.',
     color: 'blue',
   },
   {
+    role: 'Full Stack Development Intern',
+    company: 'Certified Internship Course',
+    duration: 'Completed & Certified',
+    type: 'Frontend & Backend',
+    skills: ['Frontend Development', 'Backend Development', 'Web Applications', 'Database Management'],
+    note: undefined as string | undefined,
+    color: 'green',
+  },
+  {
     role: 'Machine Learning Intern',
-    company: 'Persevex LLP',
-    duration: 'Jul 1, 2026 – Sep 30, 2026 · 3 Months',
+    company: 'Presevex',
+    duration: '3-Month Internship',
     type: 'Stipend: ₹15,000',
-    skills: ['Machine Learning', 'Python', 'Model Building'],
+    skills: ['Machine Learning', 'Python', 'TransitPulse AI', 'Resume Analyzer'],
+    note: 'Delivered TransitPulse AI and an NLP-based Resume Analyzer during the internship.',
     color: 'orange',
   },
 ]
@@ -72,6 +75,7 @@ export default function Internships() {
                 <div className={styles.skillTags}>
                   {intern.skills.map(s => <span key={s} className={styles.skillTag}>{s}</span>)}
                 </div>
+                {intern.note && <p className={styles.note}>{intern.note}</p>}
               </div>
             </div>
           ))}

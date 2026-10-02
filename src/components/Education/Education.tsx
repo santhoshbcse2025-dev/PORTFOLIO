@@ -6,15 +6,22 @@ const education = [
   {
     degree: 'B.E. Computer Science & Engineering',
     institution: 'Chennai Institute of Technology',
-    batch: '2023 – 2027',
-    cgpa: 'Pursuing',
+    batch: '2025 – 2029',
+    cgpa: 'Pursuing · 2nd Year',
     coursework: ['Data Structures & Algorithms', 'DBMS', 'Operating Systems', 'Computer Networks', 'Software Engineering', 'Machine Learning'],
   },
   {
     degree: 'Higher Secondary (12th)',
     institution: 'CEOA Matriculation Higher Secondary School, Madurai',
-    batch: '2021 – 2023',
-    cgpa: 'XX%',
+    batch: 'Completed',
+    cgpa: '—',
+    coursework: [],
+  },
+  {
+    degree: 'Secondary School (10th)',
+    institution: 'Landis Matriculation Higher Secondary School, Natham',
+    batch: 'Completed',
+    cgpa: '—',
     coursework: [],
   },
 ]
